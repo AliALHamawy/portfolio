@@ -1,0 +1,14 @@
+footer {
+    width: 100%;
+    margin: 0 0 10px 0;
+    padding: 0 0 10px 0;
+}
+footer p {
+    text-align: center;
+    margin: 0 auto;
+    color: var(--subtitle);
+}
+footer p a{
+    color: var(--blue);
+    cursor: pointer;
+}

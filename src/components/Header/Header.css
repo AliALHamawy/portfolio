@@ -1,0 +1,226 @@
+header.flex {
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2.4rem;
+    margin-left: -3rem;
+    margin-right: -3rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 9999;
+}
+
+header.flex nav {
+    background-color: var(--secoundary);
+    padding: 1rem 2rem;
+    border-radius: 55px;
+    -webkit-border-radius: 55px;
+    -moz-border-radius: 55px;
+    -ms-border-radius: 55px;
+    -o-border-radius: 55px;
+    box-shadow: 0 0 30px #51494994;
+}
+
+header.flex ul.flex {
+    gap: 20px;
+}
+
+header ul li a {
+    color: var(--title);
+    opacity: .9;
+    font-size: .88rem;
+    font-weight: 600;
+}
+
+
+header.flex nav ul li {
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+}
+
+header ul li a:hover,
+header .fixed ul.modal li a:hover {
+    color: var(--blue);
+    opacity: 1;
+}
+
+
+header button.menu {
+    display: none;
+}
+
+/* Start Icon Button */
+header button.menu,
+header button.mode {
+    background-color: var(--secoundary) !important;
+    height: 2.4rem;
+    width: 2.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 1px solid #31e2fa6e;
+    box-shadow: 0 0 30px #494e51c7;
+    color: var(--subtitle) !important;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+}
+.light header button.menu,
+.light header button.mode {
+    border: 1px solid #faa3316e;
+    box-shadow: 0 0 30px #514949c7;
+}
+
+header button.menu:hover,
+header button.mode:hover {
+    color: #fff;
+    border: 1px solid var(--blue);
+
+}
+
+header button.close-modal-btn {
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+}
+
+header button.close-modal-btn:hover {
+    color: rgb(242, 29, 29);
+    rotate: 180deg;
+}
+
+.icon-sun-stroke {
+    color: #faa331;
+}
+.icon-moon-stroke {
+    color: #83cfff;
+}
+/* End Icon Button */
+/* Start Model == pop up */
+header .fixed {
+    position: fixed;
+    inset: 0;
+    /* inset: top bottom right left;  */
+    background-color: rgba(40, 40, 40, 0.898);
+    z-index: 9999;
+    backdrop-filter: blur(7px);
+}
+
+/* Start Animation */
+@keyframes popUp {
+    0% {
+        scale: 0;
+    }
+
+    100% {
+        scale: 1;
+    }
+}
+
+@keyframes popOut {
+    0% {
+        scale: 1;
+        opacity: 1;
+    }
+
+    100% {
+        scale: 0;
+        opacity: 0;
+    }
+}
+
+/* End Animation */
+header .fixed ul.modal {
+    /* width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem; */
+    animation: popUp .25s;
+    background-color: var(--secoundary);
+    padding: 2rem 2rem;
+    width: 100%;
+}
+
+header .fixed ul.modal.popOut {
+    animation: popOut .25s;
+}
+
+
+header .fixed ul.modal li {
+    transition: all .5s linear;
+    padding: 1rem 1rem;
+    -webkit-transition: all .5s linear;
+    -moz-transition: all .5s linear;
+    -ms-transition: all .5s linear;
+    -o-transition: all .5s linear;
+}
+
+header .fixed ul.modal li:hover {
+
+    margin-left: 1rem;
+}
+
+header .fixed ul.modal li:not(:last-child) {
+    border-bottom: 1px solid var(--border);
+}
+
+/* End Model == pop up */
+
+/* Close button styles */
+header .fixed .close-modal-btn {
+    position: absolute;
+    top: 20px;
+    right: 32px;
+    background: none;
+    border: none;
+    font-size: 2.2rem;
+    color: var(--title, #fff);
+    cursor: pointer;
+    z-index: 10000;
+}
+
+header .fixed ul {
+    display: none;
+}
+
+/* Start Media */
+@media (min-width: 601px) {
+    header button.menu {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    header.flex {
+        /* flex-direction: column; */
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 601px) {
+    header.flex nav {
+        display: none;
+    }
+
+
+
+    header .fixed .modal {
+        display: block;
+        position: fixed;
+    }
+}
+
+/* End Media */

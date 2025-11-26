@@ -1,0 +1,172 @@
+section.hero {
+    margin-top: 130px;
+}
+
+/* Start Left Section */
+section.hero .avatar-row {
+    min-height: 150px;
+}
+section.hero .left-section {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 2rem 1rem;
+}
+
+section.hero .left-section img.avatar {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: 1px solid darkorange;
+    padding: 1px;
+    box-shadow: 2px 2px 40px rgba(128, 128, 128, 0.789) inset;
+    /* margin-right: 16px; */
+}
+
+.ali {
+    font-size: 29px;
+    font-style: italic;
+    font-family: emoji;
+}
+
+
+section.hero .left-section span i.icon-verified {
+    color: rgb(83, 188, 252);
+    margin-left: 0;
+    margin-top: 1000px;
+    bottom: 0 !important;
+    transform: translateY(-50%);
+}
+section.hero .left-section span {
+    margin-top:70px;
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
+section.hero div.div-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+section.hero h1.title {
+    font-size: 2.8rem;
+    margin: 16px 0 8px 0;
+    color: var(--title);
+    /* line-height: 2rem; */
+}
+
+section.hero p.sub-title {
+    font-size: 1.2rem;
+    color: var(--subtitle);
+    margin-bottom: 16px;
+    line-height: 1.5rem;
+}
+
+section.hero .icons {
+    display: flex;
+    gap: .35rem;
+    transition: all .5s;
+}
+
+section.hero .icons .icon {
+    cursor: pointer;
+    color: var(--subtitle);
+    transition: all .5s;
+    font-size: 1.5rem;
+}
+
+section.hero .icons .icon-facebook {
+    font-size: 1.75rem !important;
+    transform: translateY(-2px);
+    -webkit-transform: translateY(-2px);
+    -moz-transform: translateY(-2px);
+    -ms-transform: translateY(-2px);
+    -o-transform: translateY(-2px);
+}
+
+section.hero .icons .icon-github:hover {
+    color: #000;
+}
+
+section.hero .icons .icon-facebook:hover {
+    color: #1877f2;
+}
+
+section.hero .icons .icon-instagram:hover {
+    color: #e1306c;
+}
+
+section.hero .icons .icon-x1:hover {
+    color: #000;
+}
+
+.avatar-row {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.avatar-row span i.icon-verified {
+    color: var(--blue);
+    position: relative;
+    top: 18px !important;
+    font-size: 1.2rem;
+}
+
+/* end Left Section */
+/* Start Right Section */
+/* section .right-section Lottie{
+    width: 90%;
+    height: 90%;
+    transform: translate3d(0px, 0px, 0px);
+    content-visibility: visible;
+} */
+/* End Right Section */
+
+/* Start media */
+@media (max-width : 900px) {
+    section .right-section {
+        display: none;
+    }
+
+    section .left-section {
+        justify-content: center !important;
+        align-items: center !important;
+        text-align: center;
+    }
+    section .left-section  img.avatar{
+        width: 135px;
+        height: 135px;
+    }
+
+    section .left-section h1.title {
+        font-size: 37px;
+    }
+
+    section .left-section i.icon-verified {
+        display: none;
+    }
+
+
+}
+@media (max-width: 616px) {
+    section.hero .left-section .avatar-row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    }
+    section .left-section h1.ali {
+        font-size: 29px;
+    }
+}
+
+/* End media */

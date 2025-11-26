@@ -1,0 +1,169 @@
+section.contact-us h1 span.icon-envelope-open {
+    color: var(--subtitle);
+    margin-right: 1rem;
+    font-size: 1.8rem;
+}
+
+section.contact-us h1.title {
+    color: var(--title);
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+section.contact-us p.sub-title {
+    color: var(--subtitle);
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+    line-height: 1.6rem;
+}
+
+section.contact-us form div label {
+    color: var(--subtitle);
+    margin-bottom: .5rem;
+    font-size: 1rem;
+    width: 150px !important;
+}
+
+section.contact-us #email,
+section.contact-us #textarea {
+    all: unset;
+    background-color: rgba(63, 63, 70, .15);
+    border: 1px solid rgb(63, 63, 70);
+    color: var(--title);
+    width: 16rem;
+    padding: .5rem 1rem;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    font-size: 1.1rem;
+}
+
+section.contact-us #textarea {
+    height: 120px;
+    resize: none;
+}
+section.contact-us #email:focus,
+section.contact-us #textarea:focus,
+section.contact-us #email:hover,
+section.contact-us #textarea:hover {
+    border: 1px solid rgb(45, 212, 191);
+}
+.light section.contact-us #email:focus,
+.light section.contact-us #textarea:focus,
+.light section.contact-us #email:hover,
+.light section.contact-us #textarea:hover {
+    color: #535353;
+    border: 1px solid #535253;
+}
+section.contact-us form button {
+    all: unset;
+    background-color: rgba(36, 37, 46, 1);
+    padding: .75rem 1.9rem;
+    text-align: center;
+    justify-content: center;
+    border-radius: 0.4rem;
+    -webkit-border-radius: 0.4rem;
+    -moz-border-radius: 0.4rem;
+    -ms-border-radius: 0.4rem;
+    -o-border-radius: 0.4rem;
+    border: 1px solid var(--border);
+    font-size: 1rem;
+    text-transform: capitalize;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+    flex-wrap: wrap;
+    cursor: pointer;
+    margin-top: 1.8rem;
+}
+
+.light section.contact-us form button {
+    border-color: #000;
+}
+
+section.contact-us form button.active,
+section.contact-us form button:hover {
+    border: 1px solid var(--blue);
+    scale: .97;
+}
+
+
+@media (min-width: 801px) {
+    section.contact-us {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+section.contact-us form button.active,
+section.contact-us form button:hover{
+    
+    transform: translatey(-5px);
+}
+}
+@media (max-width: 900px) {
+    section.contact-us form {
+        width: 100%;
+    }
+    section.contact-us form div{
+        justify-content: center;
+        flex-direction: column;
+        /* align-items: flex-start; */
+    }
+    section.contact-us .animation{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 16px 0;
+        height: auto;
+        padding: 0;
+    }
+    section.contact-us .contactContainer {
+        justify-content: center;
+        align-items: center;
+    }
+    section.contact-us .contactContainer button {
+        display: block;
+        margin: 10px auto;
+        transform: none;
+    }
+    section.contact-us form button.active,
+    section.contact-us form button:hover{
+        transform: none;
+        -webkit-transform: none;
+        -moz-transform: none;
+        -ms-transform: none;
+        -o-transform: none;
+    }
+    section.contact-us .email {
+        display: none;
+    }
+}
+@media (max-width: 475px) {
+    section.contact-us form div label {
+        color: var(--subtitle);
+        margin-bottom: .5rem;
+        margin-top: .5rem;
+        font-size: 1rem;
+        /* width: 150px !important; */
+}
+
+section.contact-us form button,
+section.contact-us form button.active,
+section.contact-us form button:hover{
+    transform: none;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+}
+       
+}
