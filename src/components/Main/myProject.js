@@ -11,4 +11,3 @@ export const myProjects = [
     { projectTitle: "X - O Game", subTitle: "Tic‑Tac‑Toe built in React with smart win detection.", category: "react", imgPath: "/portfolio/projects%20photo/X-O%20game.jpg", link: "https://alialhamawy.github.io/x-o-game/", gitRepo: "https://github.com/AliALHamawy/X-O-game" },
     { projectTitle: "Product", subTitle: "Premium product card showcasing price, rating, and CTA.", category: "css", imgPath: "/portfolio/projects%20photo/product.png", link: "https://alialhamawy.github.io/Prodcut-Card/", gitRepo: "https://github.com/AliALHamawy/Prodcut-Card" }
 ];
-// `${process.env.NODE_DEV ? "../../../public/product.jpg": process.env.PUBLIC_URL + "/product.jpg"}`
